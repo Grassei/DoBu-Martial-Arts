@@ -85,9 +85,19 @@ header nav a:hover, header nav a:active{
     cursor: pointer;
 }
 
+.dangerButton{
+    display: inline-block;
+    border: 1px solid var(--color-border-dark);
+    background: none;
+    color: var(--color-text-secondary) !important;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 13px;
+    cursor: pointer;
+}
+
 .btn:hover {
     background: var(--color-primary-dark);
-    border-color: var(--color-primary-dark);
     color: var(--color-text-light)
 }
 
@@ -233,7 +243,7 @@ section , .page{
     padding: 28px
 }
 
-.infoCard h3{
+.infoCard h2{
     margin: 14px 0 8px
 }
 
@@ -266,7 +276,6 @@ section , .page{
 }
 
 .classCard {
-    display:flexbox;
     padding: 22px 14px;
     min-height: 185px
 }
@@ -276,7 +285,7 @@ section , .page{
     margin-bottom: 15px
 }
 
-.classCard h3 {
+.classCard h2 {
     font-size: 17px;
     margin: 0 0 10px
 }
@@ -501,7 +510,7 @@ section , .page{
 }
 .instructorInfo{
     flex: 1;
-    padding:24;
+    padding:24px;
 }
 
 .instructorRole{
@@ -512,7 +521,7 @@ section , .page{
     letter-spacing: 1.5px;
 }
 
-.instructorInfo h3{
+.instructorInfo h2{
     margin: 0 0 10px;
     font-size: 21px;
 }
@@ -612,6 +621,10 @@ section , .page{
     font-weight: 700;
 }
 
+#dangerButton{
+
+}
+
 
 @media(max-width:850px){
     header {
@@ -628,7 +641,7 @@ section , .page{
         grid-template-columns: repeat(2, 1fr);
     }
     .hero h1 {
-        font: size 42px;;
+        font-size: 42px;
     }
     .sectionHeading{
         display:block
@@ -657,6 +670,7 @@ section , .page{
         text-align: left;
         padding-left: 20px;
     }
+
 }
 
 @media(max-width:600px){

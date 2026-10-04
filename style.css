@@ -671,7 +671,47 @@ section , .page{
         text-align: left;
         padding-left: 20px;
     }
+     .accountHeader {
+        margin-bottom: 30px;
+    }
 
+    .accountHeader h1 {
+        font-size: 32px;
+    }
+
+    .accountGrid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .accountCard,
+    .memberCard {
+        padding: 20px;
+    }
+
+    .accountCardHeader {
+        margin-bottom: 20px;
+    }
+
+    .accountCardHeader h2 {
+        font-size: 19px;
+    }
+
+    .accountDetails {
+        gap: 15px;
+    }
+
+    .membershipInfo {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .accountCard .btn,
+    .memberCard .btn, .dangerButton {
+        width: 100%;
+        text-align: center;
+    }
+    
 }
 
 @media(max-width:600px){
